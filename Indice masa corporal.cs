@@ -35,7 +35,7 @@ namespace Imc
 
                                             Console.WriteLine("obvesidad severa:" + Imc);
 
-                                      else if (Imc >= 40)
+                                      else (Imc >= 40)
 
                                              Console.WriteLine("obvesidad mórbida:" + Imc);
 
