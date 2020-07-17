@@ -14,7 +14,7 @@ namespace Desafio_3
             double Contrato = double.Parse(Console.ReadLine());
 
 
-            int SMLV = 877803;
+            double SMLV = 877803;
            
             
             
