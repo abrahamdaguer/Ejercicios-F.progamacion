@@ -15,12 +15,17 @@ namespace Tarifa
             double TarifaB = 13500;
             double TarifaC = 35800;
 
-            if (salario <= 1755606)
+            if (salario <= 1755606){
                 Console.WriteLine("Su valor a pagar es:" + TarifaA);
-            else if (1755607 <= salario && salario <= 4389015)
+            }
+            else if (1755607 <= salario && salario <= 4389015){
                 Console.WriteLine("Su valor a pagar es:" + TarifaB);
-            else if (salario >= 4389015)
+            }
+            else if (salario >= 4389015){
                 Console.WriteLine("Su valor a pagar es:" + TarifaC);
+            }
+            
+            Console.ReadKey();
         }
     }
 }
