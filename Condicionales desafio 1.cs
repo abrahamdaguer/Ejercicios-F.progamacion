@@ -6,18 +6,22 @@ namespace Calcular_tarifa
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Cuantos SMLV gana mensualmente");
+            Console.WriteLine("Cuantos gana mensualmente");
             double salario = double.Parse(Console.ReadLine());
 
-            double smlv = (salario * 877803);
+           
 
-            if (smlv < 1755606)
+            if (salario < 1755606){
                 Console.WriteLine("Debe pagar la tarifa A");
-            else if (1755606 <= smlv && smlv < 3511212)
+            }
+            
+            else if (1755606 <= salario && salario< 3511212){
                 Console.WriteLine("Debe pagar la tarifa B");
-            else if (smlv >= 3511212)
+            }
+            
+            else if (salario >= 3511212){
                 Console.WriteLine("Debe parar la tarifa C");
-
+            }
             Console.ReadKey();
         }
     }
