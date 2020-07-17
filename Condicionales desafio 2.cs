@@ -8,7 +8,7 @@ namespace Tarifa
         {
 
 
-            Console.WriteLine("Cuantos SMLV gana mensualmente ");
+            Console.WriteLine("Cuantos gana mensualmente ");
             double salario = double.Parse(Console.ReadLine());
 
             double TarifaA = 3400;
