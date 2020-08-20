@@ -6,24 +6,27 @@ namespace Blackjack_Varios_jugadores
     {
         static void Main(string[] args)
         {
-            Random aleatorio = new Random();
-            int carta_ADC = 0, carta1 = 0, carta2 = 0, total = 0, jugador = 0, n = 0, ganador=0, jugadorWin = 0; 
-           
+              Random aleatorio = new Random();
+            int carta_ADC = 0, carta1 = 0, carta2 = 0, total = 0, jugador = 0, n = 0, ganador=0, jugadorWin = 0;
+            string cont = "";
             Console.WriteLine("\nIngrese el numero de jugadores ");
             n = int.Parse(Console.ReadLine());
             //Validar que el numero de jugadores este entre 2 y 5
             while (2 > n || n > 5)
-            {
-               
-              
-                Console.WriteLine("\nN");
-                Console.WriteLine("\nIngrese el numero de jugadores ");
+            { 
+                Console.WriteLine("\nIngrese un  numero de jugadores  valido");
                 n = int.Parse(Console.ReadLine());
-
             }
             // juego modificado para funcionar con varios jugadores 
             while (2 <= n && n <= 5)
             {
+                Console.WriteLine("¿Iniciar el juego? (s/n)");
+                cont = Console.ReadLine();
+                while (cont != "s" && cont != "n")
+                {
+                    Console.WriteLine("Ingrese una entrada válida.");
+                    cont = Console.ReadLine();
+                }
                 carta1 = aleatorio.Next(1, 11);
                 carta2 = aleatorio.Next(1, 11);
                 
@@ -34,7 +37,7 @@ namespace Blackjack_Varios_jugadores
                 Console.WriteLine("\nSu total es de: " + total);
 
 
-                while (true)
+                while (cont == "s")
                 {
 
 
